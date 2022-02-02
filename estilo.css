@@ -1,0 +1,215 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px;
+}
+
+li a:hover {
+    background-color: gray;
+    border-radius: 10%;
+}
+
+.imagen {
+    padding: 10px 40px;
+    height: 80px;
+}
+
+.check {
+    float: right;
+    font-size: 20px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:768px) {
+    .imagen {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:520px) {
+    .check {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(76, 100, 150);
+        top: 80px;
+        left: -100vh;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: 65vh 65vh 65vh;
+}
+
+.articulo {
+    padding: 12px;
+    margin: 5px;
+    background-color: royalblue;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+h2 {
+    padding: 12px;
+}
+
+p {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.imagenes {
+    height: 200px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+@media (max-width:768px) {
+    #productos {
+        grid-template-columns: 45vh 45vh 45vh;
+    }
+}
+
+@media (max-width:600px) {
+    #productos {
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(53, 56, 64);
+}
+
+.par {
+    display: inline-block;
+    width: 275px;
+    height: 75px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+.formu {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 12px;
+    border-radius: 5%;
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+}
+
+.nombres1 {
+    font-size: 32px;
+    font-family: monospace;
+    text-align: center;
+
+}
+
+.nombres {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: monospace;
+    margin-top: 50px;
+}
+
+.cajas2 {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: darkgrey;
+    color: black;
+    margin-top: 5px;
+}
+
+.cajas3 {
+    max-height: 100px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: darkgrey;
+    color: black;
+}
+
+@media (max-width:768px) {
+    .nombres1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:600px) {
+    .formu {
+        width: 475px;
+        height: 100%;
+    }
+    .nombres1 {
+        font-size: 25px;
+    }
+}
+
